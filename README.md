@@ -32,3 +32,7 @@ npm run build
 ```sh
 npm create vue@latest name_app
 ```
+
+## Official vue tutorial link
+
+Using vue 3 with Composition API (here)[https://vuejs.org/guide/introduction.html#api-styles]
