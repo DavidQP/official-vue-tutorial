@@ -10,6 +10,7 @@ import ConditionalRendering from '@/components/ConditionalRendering.vue'
 import ListRendering from '@/components/ListRendering.vue'
 import ComputedProperty from '@/components/ComputedProperty.vue'
 import LifecycleAndTemplateRefs from '@/components/LifecycleAndTemplateRefs.vue'
+import Watchers from '@/components/Watchers.vue'
 
 const section = ref(0);
 </script>
@@ -25,4 +26,5 @@ const section = ref(0);
   <ListRendering :section="7" />
   <ComputedProperty :section="8" />
   <LifecycleAndTemplateRefs :section="9" />
+  <Watchers :section="10" />
 </template>
