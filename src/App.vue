@@ -8,6 +8,7 @@ import EventListeners  from '@/components/EventListeners.vue'
 import FormBindings from '@/components/FormBindings.vue'
 import ConditionalRendering from '@/components/ConditionalRendering.vue'
 import ListRendering from '@/components/ListRendering.vue'
+import ComputedProperty from '@/components/ComputedProperty.vue'
 
 const section = ref(0);
 </script>
@@ -21,4 +22,5 @@ const section = ref(0);
   <FormBindings :section="5" />
   <ConditionalRendering :section="6" />
   <ListRendering :section="7" />
+  <ComputedProperty :section="8" />
 </template>
