@@ -9,6 +9,7 @@ import FormBindings from '@/components/FormBindings.vue'
 import ConditionalRendering from '@/components/ConditionalRendering.vue'
 import ListRendering from '@/components/ListRendering.vue'
 import ComputedProperty from '@/components/ComputedProperty.vue'
+import LifecycleAndTemplateRefs from '@/components/LifecycleAndTemplateRefs.vue'
 
 const section = ref(0);
 </script>
@@ -23,4 +24,5 @@ const section = ref(0);
   <ConditionalRendering :section="6" />
   <ListRendering :section="7" />
   <ComputedProperty :section="8" />
+  <LifecycleAndTemplateRefs :section="9" />
 </template>
