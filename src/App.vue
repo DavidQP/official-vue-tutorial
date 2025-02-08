@@ -13,13 +13,18 @@ import LifecycleAndTemplateRefs from '@/components/LifecycleAndTemplateRefs.vue'
 import Watchers from '@/components/Watchers.vue'
 import Component from '@/components/Component.vue'
 import Props from '@/components/Props.vue'
+import Emit from '@/components/Emit.vue'
 
+const title = ref('Vue Official tutorial')
 const section = ref(0);
 const greeting = ref('Hello from parent')
+// Emit section
+const childMsg = ref('No child msg yet')
+
 </script>
 
 <template>
-  <h1>Vue official tutorial</h1>
+  <h1>{{ title }}</h1>
   <GettingStarted :section="1" />
   <DeclarativeRendering :section="2" />
   <AttributesBinding :section="3" />
@@ -32,4 +37,8 @@ const greeting = ref('Hello from parent')
   <Watchers :section="10" />
   <Component :section="11" />
   <Props :section="12" :msg="greeting" />
+  <!-- Init Emit section -->
+  <Emit :section="13" @response="(msg) => childMsg = msg" />
+  <p>{{ childMsg }}</p>
+  <!-- End Emit section -->
 </template>
