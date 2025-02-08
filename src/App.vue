@@ -14,6 +14,7 @@ import Watchers from '@/components/Watchers.vue'
 import Component from '@/components/Component.vue'
 import Props from '@/components/Props.vue'
 import Emit from '@/components/Emit.vue'
+import SlotComponent from '@/components/SlotComponent.vue'
 
 const title = ref('Vue Official tutorial')
 const section = ref(0);
@@ -41,4 +42,7 @@ const childMsg = ref('No child msg yet')
   <Emit :section="13" @response="(msg) => childMsg = msg" />
   <p>{{ childMsg }}</p>
   <!-- End Emit section -->
+  <SlotComponent :section="14">
+    This is some slot content!
+  </SlotComponent>
 </template>
