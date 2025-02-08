@@ -11,6 +11,7 @@ import ListRendering from '@/components/ListRendering.vue'
 import ComputedProperty from '@/components/ComputedProperty.vue'
 import LifecycleAndTemplateRefs from '@/components/LifecycleAndTemplateRefs.vue'
 import Watchers from '@/components/Watchers.vue'
+import Component from '@/components/Component.vue'
 
 const section = ref(0);
 </script>
@@ -27,4 +28,5 @@ const section = ref(0);
   <ComputedProperty :section="8" />
   <LifecycleAndTemplateRefs :section="9" />
   <Watchers :section="10" />
+  <Component :section="11" />
 </template>

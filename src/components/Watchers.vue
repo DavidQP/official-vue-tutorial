@@ -15,7 +15,7 @@ const todoData = ref(null)
 
 
 onMounted(() => {
-  titleElement.value.textContent = `${props.section} - ${title}`
+  titleElement.value.textContent = `${props.section} - ${title.value}`
 })
 
 async function fetchedData() {
