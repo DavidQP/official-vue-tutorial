@@ -12,8 +12,10 @@ import ComputedProperty from '@/components/ComputedProperty.vue'
 import LifecycleAndTemplateRefs from '@/components/LifecycleAndTemplateRefs.vue'
 import Watchers from '@/components/Watchers.vue'
 import Component from '@/components/Component.vue'
+import Props from '@/components/Props.vue'
 
 const section = ref(0);
+const greeting = ref('Hello from parent')
 </script>
 
 <template>
@@ -29,4 +31,5 @@ const section = ref(0);
   <LifecycleAndTemplateRefs :section="9" />
   <Watchers :section="10" />
   <Component :section="11" />
+  <Props :section="12" :msg="greeting" />
 </template>
